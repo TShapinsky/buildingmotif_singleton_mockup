@@ -1,7 +1,4 @@
 from buildingmotif.buildingmotif import BuildingMOTIF
-from buildingmotif.singleton import SingletonNotInstantiatedException
-
-def get_building_motif():
-    if hasattr(BuildingMOTIF,"instance"):
-        return BuildingMOTIF.instance
-    raise SingletonNotInstantiatedException
+from buildingmotif.template import Template
+from buildingmotif.template_library import TemplateLibrary
+from buildingmotif.utilities import get_building_motif

@@ -1,5 +1,5 @@
 from buildingmotif import BuildingMOTIF, get_building_motif
-from buildingmotif import SingletonNotInstantiatedException
+from buildingmotif.singleton import SingletonNotInstantiatedException
 
 try:
     get_building_motif()
